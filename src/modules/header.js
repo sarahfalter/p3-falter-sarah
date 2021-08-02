@@ -7,4 +7,4 @@ class Header {
 }
 
 
-export const header = new Header('Lunchtime!, sarah');
+export const header = new Header('LunchApp', '../img/plate.svg');
