@@ -1,24 +1,41 @@
-
-
 class Lunch {
     constructor(body) {
         this.body = body;
     }
 
-    /*const btn = document.getElementById("clickme");
+    randomizeLunches() {    
+        let itemsRandom = [
+            ['taco', '../img/plate.svg'], 
+            ['taco2', '../img/taco2.png'], 
+            ['taco3', '../img/taco3.png'], 
+            ['taco4', '../img/taco4.png'], 
+            ['taco5', '../img/taco5.png'], 
+            ['taco6', '../img/taco6.png'], 
+            ['taco7', '../img/taco7.png'], 
+            ['taco8', '../img/taco8.png']
+    
+    ];
 
-    btn.addEventListener('click', function() { });*/
-
-    randomizeLunches() {
-        let itemsRandom = ['tacos', 'tomato soup', 'caesar salad', 'burrito bowl', 'pasta primavera', 'turkey club', 'smoothie bowl', 'chicken teriyaki', 'lamb gyro', 'cajun wrap'];
-    itemsRandom.sort(function(a, b){return 0.5 - Math.random()});
+    return itemsRandom[Math.floor(Math.random() * itemsRandom.length)];
     }
+
     showResults() {
-        for (var i = 0; i < itemsRandom.length; i++) {
-        document.getElementById("content").innerHTML = itemsRandom[i];
-      }
+
+      document.getElementById("content").innerHTML = this.randomizeLunches()[0];
+      document.getElementById("food-img").src = this.randomizeLunches()[1];
     }
 
+    addBtn () {
+        const btn = document.getElementById("clickme");
+    
+        btn.addEventListener('click', () => { 
+            let results = this.randomizeLunches();
+            document.getElementById("content").innerHTML = results[0];
+            document.getElementById("food-img").src = results[1];
+        });
+    
+        
+        }
 }
 
-export const lunchGen = new Lunch('randomizeLunches(), showResults()');
+export const lunch = new Lunch('anything');
