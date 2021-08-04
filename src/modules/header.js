@@ -7,4 +7,4 @@ class Header {
 }
 
 
-export const header = new Header('LunchApp', '../img/plate.svg');
+export const header = new Header('LunchApp', '../img/lunchapp-logo.png');

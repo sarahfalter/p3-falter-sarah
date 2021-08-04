@@ -1,8 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: white;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+.graphics {
+    overflow-x: hidden;
+}
+.desk-graphic {
+    display: none;
+}
+.background {
+    background: url(img/wavy-gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 75vh;
+    position: relative;
+}
+.logo {
+    width: 100%;
+    display: inline-flex;
+}
+
+.logo p {
+    margin-top: 17px;
+    margin-left: -7px;
+    font-size: .9rem;
+}
+header {
+    display: inline-block;
 }
 
 
-img {
-    width: 100px;
+.mob-graphic {
+    width: 100%;
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+img.desk-detail {
+    display: none;
+}
+
+.hero-text {
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -165px;
+}
+.box{
+	position: absolute;
+	margin-top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s 3;
+}
+
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+main {
+    text-align: center;
+    padding: 3%;
+}
+h2 {
+    color: #4C61EF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button#clickme {
+    border: none;
+    color: white;
+    padding: 2% 4%;
+    background: #4C61EF;
+    margin-top: 5%;
+}
+#content {
+    height: 200px;
+    background: #4C61EF;
+    width: 85%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 25px;
+    position: relative;
+    padding-top: 115px;
+}
+
+img#food-img {
+    position: absolute;
+    left: 50%;
+	transform: translate(-50%, 50%);
+    width: 50px;
+    margin-top: -220px;
+}
+
+
+@media (min-width: 360px) {
+    .mob-graphic {
+        width: 90%;
+        top: -4%;
+    }
+}
+
+@media (min-width: 400px) {
+    .mob-graphic {
+        width: 85%;
+        top: -6%;
+    }
+}
+
+@media (min-width: 430px) {
+    .mob-graphic {
+        width: 80%;
+        top: -8%;
+    }
+
+    #content {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .mob-graphic {
+        width: 75%;
+        top: -10%;
+    }
+}
+
+@media (min-width: 550px) {
+    .mob-graphic {
+        width: 70%;
+        top: -15%;
+    }
+}
+
+@media (min-width: 620px) {
+    .mob-graphic {
+        width: 65%;
+        top: -18%;
+    }
+
+    button#clickme {
+        padding: 1% 4%;
+    }
+}
+
+@media (min-width: 700px) {
+    .logo {
+        margin-left: 46px;
+    }
+    h1 {
+        position: absolute;
+        left: 60px;
+        top: 24%;
+        font-size: 3rem;
+        width: 300px;
+    }
+
+    .hero-text {
+        position: static;
+    }
+    .desk-graphic {
+        display: block;
+        position: absolute;
+        right: -49px;
+        top: 13%;
+        width: 60%;
+    }
+
+    .mob-graphic {
+        display: none;
+    }
+    main {
+        margin-top: 25%;
+    }
+
+    #content {
+        width: 60%;
+        font-size: 2rem;
+    }
+    img#food-img {
+        width: 13%;
+    }
+
+    img.desk-detail {
+        display: block;
+        position: absolute;
+        width: 20%;
+        left: -47px;
+        top: 55%;
+    }
+}
+
+@media (min-width: 850px) {
+    h1 {
+        top: 30%;
+    }
+
+    .desk-graphic {
+        width: 55%;
+        top: 12%;
+    }
+
+    main {
+        margin-top: 20%;
+    }
+}
+
+@media (min-width: 950px) {
+
+    .logo {
+        margin-left: 120px;
+    }
+    h1 {
+        left: 140px;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 4rem;
+        width: 400px;
+    }
+
+    .desk-graphic {
+        width: 50%;
+        right: -8px;
+    }
+
+    img.desk-detail {
+        width: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .desk-graphic {
+        top: 4%;
+    }
+
+    h1 {
+        top: 25%;
+    }
+
+    .box {
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 1350px) {
+    .logo {
+        margin-left: 170px;
+    }
+
+    h1 {
+        left: 185px;
+    }
+}
+
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
 }
