@@ -98,6 +98,12 @@ button#clickme {
     background: #4C61EF;
     border-radius: 10px;
     margin-top: 5%;
+    cursor: pointer;
+}
+
+button#clickme:hover {
+    background: #784CEF;
+    transition: .4s ease;
 }
 #content {
     height: 200px;
@@ -113,12 +119,20 @@ button#clickme {
 
 img#food-img {
     position: absolute;
-    left: 0;
+    left: 10px;
     right: 0;
     margin-left: auto;
     margin-right: auto;
     width: 50px;
-    margin-top: -195px;
+    margin-top: -180px;
+}
+
+footer {
+    background: #784cef;
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+    margin-top: 2%;
 }
 
 
@@ -151,6 +165,10 @@ img#food-img {
     .mob-graphic {
         width: 75%;
         top: -10%;
+    }
+
+    #content {
+        width: 75%;
     }
 }
 
@@ -226,7 +244,7 @@ img#food-img {
     }
 
     main {
-        margin-top: 15%;
+        margin-top: 9%;
     }
 
 }
@@ -259,6 +277,10 @@ img#food-img {
 
     #content {
         font-size: 1.7rem;
+    }
+
+    img#food-img {
+        width: 70px;
     }
 }
 
