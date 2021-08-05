@@ -90,17 +90,13 @@ main {
     text-align: center;
     padding: 3%;
 }
-h2 {
-    color: #4C61EF;
-    text-align: center;
-    text-transform: uppercase;
-}
 
 button#clickme {
     border: none;
     color: white;
     padding: 2% 4%;
     background: #4C61EF;
+    border-radius: 10px;
     margin-top: 5%;
 }
 #content {
@@ -112,15 +108,17 @@ button#clickme {
     font-size: 1rem;
     border-radius: 25px;
     position: relative;
-    padding-top: 115px;
+    padding-top: 140px;
 }
 
 img#food-img {
     position: absolute;
-    left: 50%;
-	transform: translate(-50%, 50%);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 50px;
-    margin-top: -220px;
+    margin-top: -195px;
 }
 
 
@@ -192,9 +190,9 @@ img#food-img {
     .desk-graphic {
         display: block;
         position: absolute;
-        right: -49px;
+        right: 20px;
         top: 13%;
-        width: 60%;
+        width: 55%;
     }
 
     .mob-graphic {
@@ -205,12 +203,9 @@ img#food-img {
     }
 
     #content {
-        width: 60%;
-        font-size: 2rem;
+        width: 40%;
     }
-    img#food-img {
-        width: 13%;
-    }
+
 
     img.desk-detail {
         display: block;
@@ -227,13 +222,13 @@ img#food-img {
     }
 
     .desk-graphic {
-        width: 55%;
         top: 12%;
     }
 
     main {
-        margin-top: 20%;
+        margin-top: 15%;
     }
+
 }
 
 @media (min-width: 950px) {
@@ -259,6 +254,11 @@ img#food-img {
 
     img.desk-detail {
         width: 15%;
+        left: -50px;
+    }
+
+    #content {
+        font-size: 1.7rem;
     }
 }
 
@@ -272,7 +272,7 @@ img#food-img {
     }
 
     .box {
-        margin-top: 7%;
+        margin-top: 6%;
     }
 }
 
@@ -283,6 +283,63 @@ img#food-img {
 
     h1 {
         left: 185px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .logo {
+        margin-left: 295px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .logo p {
+        margin-top: 38px;
+        margin-left: -7px;
+        font-size: 1.3rem;
+    }
+
+    .desk-graphic {
+        top: 0;
+    }
+
+    h1 {
+        left: 335px;
+        font-size: 7rem;
+        width: 550px;
+    }
+
+    .box {
+        margin-top: 0;
+    }
+
+    .box span {
+        width: 40px;
+        height: 40px;
+        border-bottom: 4px solid white;
+        border-right: 4px solid white;
+    }
+
+    main {
+        margin-top: 2%;
+    }
+
+    button#clickme {
+        padding: 1% 4%;
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
+
+    #content {
+        font-size: 1.7rem;
+        height: 280px;
+        padding-top: 180px;
+    }
+
+    img#food-img {
+        margin-top: -235px; 
     }
 }
 

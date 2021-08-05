@@ -35,8 +35,7 @@ renderTemplate() {
         </div>
 
         <main>
-          <h2>Your lunch is...</h2>
-          <button id="clickme">Give me an Idea</button> 
+          <button id="clickme">Click to get your lunch!</button> 
               <section id="content">  
               </section>
               <img id="food-img" src="" alt="" title="">
