@@ -9,6 +9,8 @@ body {
   font-family: 'Raleway', sans-serif;
   min-width: 100vw;
   overflow-x: hidden;
+  max-width: 100%;
+  
 }
 
 .graphics {
@@ -41,9 +43,9 @@ header {
 
 
 .mob-graphic {
-    width: 100%;
+    width: 85%;
     position: absolute;
-    top: -2%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, 50%);
 }
@@ -95,6 +97,7 @@ button#clickme {
     border: none;
     color: white;
     padding: 2% 4%;
+    font-size: 1rem;
     background: #4C61EF;
     border-radius: 10px;
     margin-top: 5%;
@@ -124,7 +127,7 @@ img#food-img {
     margin-left: auto;
     margin-right: auto;
     width: 50px;
-    margin-top: -180px;
+    margin-top: -160px;
 }
 
 footer {
@@ -138,24 +141,19 @@ footer {
 
 @media (min-width: 360px) {
     .mob-graphic {
-        width: 90%;
-        top: -4%;
+        width: 100%;
+        top: 1%;
     }
-}
 
-@media (min-width: 400px) {
-    .mob-graphic {
-        width: 85%;
-        top: -6%;
+    .hero-text {
+        margin-top: -220px;
     }
 }
 
 @media (min-width: 430px) {
     .mob-graphic {
-        width: 80%;
-        top: -8%;
+        top: 2%;
     }
-
     #content {
         font-size: 1.4rem;
     }
@@ -164,9 +162,11 @@ footer {
 @media (min-width: 500px) {
     .mob-graphic {
         width: 75%;
-        top: -10%;
+        top: -14%;
     }
-
+    .hero-text {
+        margin-top: -205px;
+    }
     #content {
         width: 75%;
     }
@@ -175,14 +175,14 @@ footer {
 @media (min-width: 550px) {
     .mob-graphic {
         width: 70%;
-        top: -15%;
+        top: -17%;
     }
 }
 
 @media (min-width: 620px) {
     .mob-graphic {
         width: 65%;
-        top: -18%;
+        top: -23%;
     }
 
     button#clickme {
@@ -244,7 +244,7 @@ footer {
     }
 
     main {
-        margin-top: 9%;
+        margin-top: 20%;
     }
 
 }
@@ -295,6 +295,10 @@ footer {
 
     .box {
         margin-top: 6%;
+    }
+
+    main {
+        margin-top: 12%;
     }
 }
 

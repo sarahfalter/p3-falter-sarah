@@ -5,16 +5,16 @@ class Lunch {
 
     randomizeLunches() {    
         let itemsRandom = [
-            ['Pasta', '../img/pasta.svg'], 
-            ['Burgers', '../img/burger.svg'], 
-            ['Fruity Acai Bowl', '../img/fruit.svg'], 
-            ['Hotdogs', '../img/hotdog.svg'], 
-            ['Ramen', '../img/ramen.svg'], 
-            ['Chicken Teriyaki Rice Bowl', '../img/rice.svg'], 
-            ['Mediterranean Skewers', '../img/skewers.svg'], 
-            ['Sushi', '../img/sushi.svg'],
-            ['Skip straight to happy hour', '../img/drink.svg'],
-            ['Pizza', '../img/pizza.svg']
+            ['Pasta!', '../img/pasta.svg'], 
+            ['Burgers!', '../img/burger.svg'], 
+            ['Fruity Acai Bowl!', '../img/fruit.svg'], 
+            ['Hotdogs!', '../img/hotdog.svg'], 
+            ['Ramen!', '../img/ramen.svg'], 
+            ['Chicken Teriyaki Rice Bowl!', '../img/rice.svg'], 
+            ['Mediterranean Skewers!', '../img/skewers.svg'], 
+            ['Sushi!', '../img/sushi.svg'],
+            ['Tacos!', '../img/taco.svg'],
+            ['Pizza!', '../img/pizza.svg']
     
     ];
 
